@@ -39,6 +39,16 @@
   
             imgX = spaceship.offsetLeft;
             imgY = spaceship.offsetTop;
+            //move the image by setting the coordinates of left & top refer to slide .  Ex. node.style.left = your coordinates calculation here.  
+            //Note node is the variable name you stored your image element in.
+            //Note the left & top properties track the x & y coordinates respectively & must be set seperately.
+            //Use the JS built-in function Math.random() to add a random number to increment the movement of the image following the mouse. 
+            // Ex. + (Math.random()*200 + 100))
+            //Refer to https://www.w3schools.com/jsref/jsref_random.asp 
+            // Concatenate the pixel unit to your calculation. Ex. + 'px';
+            spaceship.style.left = cursX - distX + "px";
+            spaceship.style.top = cursY - distY + "px";
+
 
             
           }
