@@ -25,6 +25,19 @@
         distY = 100;
         
       }
+      // creating the mouse move event and initializing the variables
+      // cursX and cursY to event.clientX and event.clientY to get the x 
+      // and y coordinates
+
+      window.addEventListener(
+          "mousemove",
+          event => 
+          {
+            cursX = event.clientX;
+            cursY = event.clientY;
+            
+          }
+        )
 
 
 
